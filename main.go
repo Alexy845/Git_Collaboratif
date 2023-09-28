@@ -48,7 +48,7 @@ func initializeBoard() {
 func printBoard() {
 	fmt.Println("Tableau du Morpion :")
 	for i := 0; i < 3; i++ {
-		fmt.Printf("%s | %s | %s\n", strings.Join(board[i][:], " | "))
+		fmt.Println(strings.Join(board[i][:], " | "))
 		if i < 2 {
 			fmt.Println("---+---+---")
 		}
